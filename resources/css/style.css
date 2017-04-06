@@ -17,6 +17,9 @@ html {
 .button {
   border-radius: 4px;
   background-color: #4a4a4a;
+}
+
+.button a {
   color: white;
 }
 
@@ -26,6 +29,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%
 }
 
 @media only screen and (max-width: 760px) {
@@ -116,9 +120,13 @@ header .mobile {
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 43.5rem;
+  width: 100%;
   background-image: url("../images/banner-landingpage.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #sign-up-cta {
@@ -126,6 +134,7 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-left: 100px;
 }
 
 #sign-up-cta .content {
@@ -296,6 +305,7 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
 }
@@ -336,11 +346,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
